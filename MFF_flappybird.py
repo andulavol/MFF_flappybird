@@ -11,7 +11,7 @@ def nova_prekazka():
     return novaprekazka1, novaprekazka2
 
 def kredity(): #zobrazení počtu kreditů
-    kredity = font.render(f' Kredity: ' + str(int(skore) ),True, (255,0,0))
+    kredity = font.render(f' Kredity: ' + str(int(skore) ),True, (255,255,255))
     kredity_rect = kredity.get_rect(center = (144,80))
     obrazovka.blit(kredity, kredity_rect)
 
@@ -61,7 +61,7 @@ skore = 0
 
 pohyb_ptacka = 0
 padani_ptacka = 0.20
-ptacek = pygame.image.load('flappybird/student_flap.png').convert()
+ptacek = pygame.image.load('flappybird/bluebird-midflap.png').convert()
 ptacek_rect = ptacek.get_rect(center = (100,256))
 
 base = pygame.image.load('flappybird/base.png').convert()
