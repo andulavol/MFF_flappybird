@@ -15,7 +15,7 @@ def kredity(): #zobrazení počtu kreditů
     kredity_rect = kredity.get_rect(center = (144,80))
     obrazovka.blit(kredity, kredity_rect)
 
-def game_over(pocetkreditu): #game over obrazovka, která zobrazí počet kreditů a do jakého ročníku jsi se dostal
+def game_over(pocetkreditu): #game over obrazovka, která zobrazí počet kreditů a do jakého ročníku ses dostal
     kredity = font.render('Dosazene kredity: ' + str(int(pocetkreditu) ),True, (255,255,255))
     kredity_rect = kredity.get_rect(center = (140,80))
     obrazovka.blit(kredity, kredity_rect)
